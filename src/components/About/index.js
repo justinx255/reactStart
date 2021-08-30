@@ -17,11 +17,12 @@ export default function About() {
                 <div className='be'>
                     ECE Graduate
                 </div>
-                <div className='wd'>
+                <div className='wd' id='id'>
                     I'm an <strong>ECE Graduate</strong> and I'm Highly Interested in <strong><em>Web Development</em></strong>
 
                 </div>
             </div>
+            <hr className='hr' />
         </div>
 
     )

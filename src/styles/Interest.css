@@ -1,0 +1,56 @@
+.g {
+  padding-top: 1.8vw;
+  position: absolute;
+  margin-top: 10vh;
+}
+.title {
+  font-size: 1.75em;
+  margin-left: 7vw;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.area {
+  display: flex;
+  margin-left: 20vw;
+}
+@media (max-width: 768px) {
+  .area {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.intrest {
+  width: 35vw;
+  font-size: 1.2em;
+  margin-top: 1vh;
+  text-indent: 1em;
+  letter-spacing: 0.025em;
+}
+
+@media (max-width: 768px) {
+  .intrest {
+    width: 70vw;
+    letter-spacing: 0.055em;
+  }
+}
+.maths {
+  font-weight: bolder;
+}
+.hr1 {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 15vw;
+  margin-top: 10vh;
+  position: absolute;
+  padding-left: 20vw;
+  margin-left: 40vw;
+  /* margin-right: 50vw; */
+}
+@media (max-width: 768px) {
+  .hr1 {
+    margin-top: 6vh;
+    /* margin-bottom: 20vh; */
+  }
+}

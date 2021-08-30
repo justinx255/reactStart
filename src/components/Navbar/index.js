@@ -27,7 +27,7 @@ export default function NavBar() {
                         <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Home
                         </Link>
-                        <Link to="/intrest" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="#id" className="nav-links" onClick={closeMobileMenu}>
                             Intrest
                         </Link>
                         <Link to="/hobby" className="nav-links" onClick={closeMobileMenu}>
