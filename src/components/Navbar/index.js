@@ -1,62 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import "../../styles/Navbar.css";
-import Dropdown from "../Dropdown";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
-    const AlbumsRoute = () => {
-        return <Dropdown />;
+    const [click, setClick] = useState(false);
+    const closeMobileMenu = () => {
+        setClick(false);
     };
-    // <div style={{ alignSelf: "center", color: "#3F51B5", padding: "55px" }}>Albums</div>
-    // console.log("hi");
+
+    const handleClick = () => {
+        setClick(!click);
+    };
 
     return (
-        //     import React from 'react';
-        // import {
-        //     Nav,
-        //     NavLink,
-        //     Bars,
-        //     NavMenu,
-        //     NavBtn,
-        //     NavBtnLink,
-        // } from './NavbarElements';
-
         <>
             <div className="Nav">
-                <div className="Bars">
-                    <FaBars />
-                    <Dropdown />
+                <div className="justin">Justin</div>
 
+                <Link to="/" className="navbar-logo"></Link>
+                <div className="Bars" onClick={handleClick}>
+                    <i className={click ? "fas fa-times" : "fas fa-bars"} />
                 </div>
-
-                <div className="NavMenu">
-                    <div className="NavLink" to="/about">
-                        About
-                    </div>
-                    <div className="NavLink" to="/events">
-                        Events
-                    </div>
-                    <div className="NavLink" to="/annual">
-                        Annual Report
-                    </div>
-                    <div className="NavLink" to="/team">
-                        Teams
-                    </div>
-                    <div className="NavLink" to="/blogs">
-                        Blogs
-                    </div>
-                    <div className="NavLink" to="/sign-up" onClick={AlbumsRoute}>
-                        Sign Up
-                    </div>
-
-                    {/* Second Nav */}
-                    {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-                </div>
-                <div className="NavBtn">
-                    <div className="NavBtnLink" to="/signin">
-                        Sign In
-                    </div>
-                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className="nav-item">
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                            Home
+                        </Link>
+                        <Link to="/intrest" className="nav-links" onClick={closeMobileMenu}>
+                            Intrest
+                        </Link>
+                        <Link to="/hobby" className="nav-links" onClick={closeMobileMenu}>
+                            Hobby
+                        </Link>
+                        <Link to="/education" className="nav-links" onClick={closeMobileMenu}>
+                            Education
+                        </Link>
+                        <Link to="/skills" className="nav-links" onClick={closeMobileMenu}>
+                            Skills
+                        </Link>
+                        <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
             </div>
         </>
     );

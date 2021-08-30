@@ -1,0 +1,45 @@
+.photoTable {
+  display: flex;
+  margin-top: 5vh;
+  
+}
+@media (max-width: 768px) {
+  .photoTable {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+}
+.photoTable > div {
+  margin-left: 8vw;
+}
+.photoTable>.info>div{
+      margin-top: 3vh;
+
+}
+@media(max-width:768px){
+    .photoTable>.info>div{
+margin-left: 20vw;
+}
+}
+.image {
+  width: 22vw;
+}
+.name {
+  font-size: 2em;
+  font-weight: bolder;
+  color: mediumturquoise;
+}
+.be{
+font-size: 1.5em;
+  font-weight: bolder;
+
+}
+
+@media (max-width: 768px) {
+  .image {
+  width: 62vw;
+  margin-left: 15%;
+  
+}
+}
