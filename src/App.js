@@ -1,7 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/Navbar";
-import About from "./components/About"; import Interest from './components/Interest'
+import About from "./components/About";
+import Interest from "./components/Interest";
+import Education from "./components/Education";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -11,12 +13,10 @@ function App() {
         <Route path="/" exact>
           <NavBar />
           <About />
+
           <Interest />
-        </Route>
-        <Route to='id'>
-          <NavBar />
-          <About />
-          <About />
+
+          <Education />
         </Route>
       </Switch>
     </Router>

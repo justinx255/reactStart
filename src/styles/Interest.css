@@ -12,6 +12,7 @@
 .area {
   display: flex;
   margin-left: 20vw;
+  margin-top: 2vh;
 }
 @media (max-width: 768px) {
   .area {
@@ -43,14 +44,14 @@
   border-width: 5px;
   width: 15vw;
   margin-top: 10vh;
-  position: absolute;
+  position: relative;
   padding-left: 20vw;
   margin-left: 40vw;
   /* margin-right: 50vw; */
 }
 @media (max-width: 768px) {
   .hr1 {
-    margin-top: 6vh;
+    margin-top: 5vh;
     /* margin-bottom: 20vh; */
   }
 }

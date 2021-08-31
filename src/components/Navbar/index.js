@@ -27,19 +27,16 @@ export default function NavBar() {
                         <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Home
                         </Link>
-                        <Link to="#id" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Intrest
                         </Link>
-                        <Link to="/hobby" className="nav-links" onClick={closeMobileMenu}>
-                            Hobby
-                        </Link>
-                        <Link to="/education" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Education
                         </Link>
-                        <Link to="/skills" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Skills
                         </Link>
-                        <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Contact
                         </Link>
                     </li>
