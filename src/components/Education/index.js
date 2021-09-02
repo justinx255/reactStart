@@ -10,8 +10,8 @@ export default function Education() {
     ]
     return (
         <div className='home1'>
-            <div>
-                Education:
+            <div className='title'>
+                Education
             </div>
             <div className="table1 ">
                 <div className="header">
@@ -37,6 +37,8 @@ export default function Education() {
                     )}
                 </div>
             </div>
+            <hr className='hr2' />
+
         </div >
     )
 }

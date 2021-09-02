@@ -22,8 +22,17 @@
     max-width: 70vw;
   }
 }
+
+.image {
+  width: 12vw;
+}
+
+@media(max-width:768px){
+
 .image {
   width: 22vw;
+}
+
 }
 .wd{
   font-size: 1.2em;
@@ -58,7 +67,7 @@
 }
 @media (max-width: 768px) {
   .hr {
-    margin-top: 70vh;
+    margin-top: 88vh;
     /* margin-bottom: 20vh; */
   }
 }

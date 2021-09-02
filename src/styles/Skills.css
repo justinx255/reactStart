@@ -1,0 +1,30 @@
+.skils {
+    margin-top: 10vh;
+}
+@media(max-width:768px){
+    .skils {
+        margin-top: 6vh;
+    }
+}
+.bars{
+    max-width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 5vh;
+}
+.bar_text{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.hr3{
+        border-style: none;
+        border-top-style: dotted;
+        border-color: grey;
+        border-width: 5px;
+        width: 15vw;
+        margin-top: 3vh;
+        position: absolute;
+        padding-left: 20vw;
+        margin-left: 40vw;
+        /* margin-right: 50vw; */
+}

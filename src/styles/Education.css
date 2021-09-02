@@ -3,7 +3,7 @@
 }
 @media (max-width: 768px) {
   .home1 {
-    margin-top: 47vh;
+    margin-top: 67vh;
   }
 }
 .table1 {
@@ -12,10 +12,21 @@
   text-align: center;
   flex-direction: column;
 }
+@media(max-width:768px){
+  .table1 {
+    max-width: 90vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+}
 
 .header,
 .row {
   display: flex;
+}
+.header{
+    font-weight: bolder;
 }
 
 div > .header,
@@ -27,7 +38,24 @@ div > .body {
 .c {
   display: flex;
   flex-direction: row;
+  
 }
-.board {
-  width: 40vw;
+.hr2 {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 15vw;
+  margin-top: 3vh;
+  position: absolute;
+  padding-left: 20vw;
+  margin-left: 40vw;
+  /* margin-right: 50vw; */
 }
+@media (max-width: 768px) {
+  .hr2 {
+    margin-top: 2vh;
+    /* margin-bottom: 20vh; */
+  }
+}
+
